@@ -1,5 +1,4 @@
-01_Web_Scraper.ipynb
-.*csv
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
