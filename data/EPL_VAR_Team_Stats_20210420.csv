@@ -1,0 +1,29 @@
+team_name,net_score,overturns_total,overturns_rejected,leading_to_goals_for,leading_to_goals_against,disallowed_goals_for,disallowed_goals_against,net_goal_score,subj_decisions_for,subj_decisions_against,net_subjective_score,penalties_for,penalties_against,year
+Brighton & Hove Albion,8,12,0,2,0,2,7,7,2,0,2,,,2019-2020
+Manchester United,7,13,0,1,2,0,7,6,6,2,4,,,2019-2020
+Crystal Palace,4,12,0,3,0,4,1,2,6,2,4,,,2019-2020
+Burnley,3,11,0,2,1,3,4,2,4,2,2,,,2019-2020
+Newcastle,3,3,0,1,0,0,0,1,2,0,2,,,2019-2020
+Southampton,3,13,0,0,1,0,7,6,1,4,-3,,,2019-2020
+Liverpool,2,8,0,1,0,3,4,2,1,1,0,,,2019-2020
+Leicester City,1,15,0,1,1,3,4,1,3,3,0,,,2019-2020
+Burnley,5,6,0,1,0,0,1,0,3,0,3,1,0,2020-2021
+Chelsea,3,8,1,2,0,1,0,1,2,1,1,1,0,2020-2021
+Everton,3,6,1,2,0,1,1,2,3,0,3,1,0,2020-2021
+Fulham,3,14,1,1,1,2,5,3,5,5,0,2,1,2020-2021
+Manchester City,3,7,0,2,0,2,0,0,2,1,1,1,0,2020-2021
+Brighton & Hove Albion,2,15,1,2,3,2,3,0,4,4,0,2,3,2020-2021
+Aston Villa,1,10,1,0,0,3,3,0,4,3,1,0,0,2020-2021
+Crystal Palace,1,10,1,2,1,0,1,0,4,4,0,2,1,2020-2021
+Leeds,1,9,0,1,1,2,1,-1,3,2,1,0,1,2020-2021
+Leicester City,1,13,0,4,2,2,1,1,3,3,0,3,2,2020-2021
+Sheffield United,1,9,0,3,1,0,1,3,2,3,-1,3,1,2020-2021
+Newcastle,0,8,0,1,3,0,1,-1,3,3,0,1,3,2020-2021
+Southampton,0,12,0,2,1,3,2,0,2,3,-1,2,1,2020-2021
+West Ham,0,11,0,2,1,1,3,3,2,2,0,1,1,2020-2021
+Tottenham Hotspur,-1,12,1,1,4,2,5,0,3,3,0,1,3,2020-2021
+Manchester United,-2,16,1,2,1,3,1,-1,5,3,2,2,1,2020-2021
+Wolves,-3,9,0,0,2,2,1,-3,1,3,-2,0,1,2020-2021
+Arsenal,-6,10,0,1,1,2,1,-1,2,3,-1,1,0,2020-2021
+Liverpool,-6,16,2,0,3,7,2,-8,3,5,-2,0,3,2020-2021
+West Brom,-6,12,0,0,4,0,2,-2,1,6,-5,0,2,2020-2021
