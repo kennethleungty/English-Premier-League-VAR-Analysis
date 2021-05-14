@@ -1,4 +1,4 @@
-# English Premier League
+# English Premier League VAR Data Analysis
 Analyzing Video Assistant Referee (VAR) decisions in the English Premier League (2019 - 2021)
 
 Link to Medium article: **Coming Soon!**
