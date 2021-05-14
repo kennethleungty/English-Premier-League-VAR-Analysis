@@ -1,7 +1,7 @@
 # English Premier League
 Analyzing Video Assistant Referee (VAR) decisions in the English Premier League (2019 - 2021)
 
-Link to Medium article: 
+Link to Medium article: **Coming Soon!**
 
 Data Sources
 - https://www.espn.in/football/english-premier-league/story/3929823/how-var-decisions-have-affected-every-premier-league-club
