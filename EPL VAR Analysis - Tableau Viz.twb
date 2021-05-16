@@ -10,12 +10,18 @@
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
   </preferences>
+  <style>
+    <style-rule element='worksheet'>
+      <format attr='font-size' value='9' />
+      <format attr='font-weight' value='bold' />
+    </style-rule>
+  </style>
   <datasources>
     <datasource caption='EPL_VAR_Incidents_Processed_20210509' inline='true' name='federated.09ur5c61t2oepm12tmcbp1soz950' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='EPL_VAR_Incidents_Processed_20210509' name='textscan.0q2yxgh1r0gpkq15f34jh1p5ve1t'>
-            <connection class='textscan' directory='D:/Google Drive/Data Vault/GitHub/EPL-VAR-Analysis/data' filename='EPL_VAR_Incidents_Processed_20210510.csv' password='' server='' />
+            <connection class='textscan' directory='D:/Google Drive/Data Vault/GitHub/English-Premier-League-VAR-Analysis/data' filename='EPL_VAR_Incidents_Processed_20210510.csv' password='' server='' />
           </named-connection>
         </named-connections>
         <relation connection='textscan.0q2yxgh1r0gpkq15f34jh1p5ve1t' name='EPL_VAR_Incidents_Processed_20210510.csv' table='[EPL_VAR_Incidents_Processed_20210510#csv]' type='table'>
@@ -315,7 +321,7 @@
       <column caption='Team' datatype='string' name='[team]' role='dimension' type='nominal' />
       <column caption='Team Decision' datatype='string' name='[team_decision]' role='dimension' type='nominal' />
       <column caption='Year' datatype='string' name='[year]' role='dimension' type='nominal' />
-      <layout dim-ordering='alphabetic' dim-percentage='0.563547' measure-ordering='alphabetic' measure-percentage='0.436453' show-structure='true' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.546798' measure-ordering='alphabetic' measure-percentage='0.453202' show-aliased-fields='true' show-structure='true' />
       <semantic-values>
         <semantic-value key='[Country].[Name]' value='&quot;Singapore&quot;' />
       </semantic-values>
@@ -358,9 +364,6 @@
           <style-rule element='axis'>
             <format attr='title' class='0' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]' scope='rows' value='Incident Count' />
             <encoding attr='space' class='0' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]' field-type='quantitative' max='17' min='0' range-type='fixed' scope='rows' type='space' />
-          </style-rule>
-          <style-rule element='cell'>
-            <format attr='font-size' data-class='subtotal' value='9' />
           </style-rule>
           <style-rule element='field-labels-spanner'>
             <format attr='background-color' scope='rows' value='#f9f9f9' />
@@ -424,7 +427,7 @@
             <encoding attr='space' class='0' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]' field-type='quantitative' max='17' min='0' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='cell'>
-            <format attr='font-size' data-class='subtotal' value='9' />
+            <format attr='width' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]' value='62' />
           </style-rule>
           <style-rule element='header'>
             <format attr='height-header' value='64' />
@@ -459,10 +462,1024 @@
           <column>[federated.09ur5c61t2oepm12tmcbp1soz950].[Match Minute (bin) 2]</column>
           <column>[federated.09ur5c61t2oepm12tmcbp1soz950].[Match Minute (bin)]</column>
         </show-full-range>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>20</value>
+                <value>45</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>44</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>43</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>8</value>
+                <value>42</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>41</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>40</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>39</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>12</value>
+                <value>38</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>37</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>36</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>35</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>34</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>33</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>32</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>31</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>30</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>29</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>9</value>
+                <value>28</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>27</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>26</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>25</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>24</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>23</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>15</value>
+                <value>22</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>21</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>20</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>19</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>18</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>17</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>16</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>15</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>14</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>13</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>12</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>11</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>10</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='36' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>9</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='37' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>8</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='38' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>7</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='39' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>6</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='40' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>5</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='41' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>4</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='42' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>3</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='43' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>2</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='44' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>1</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='45' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
       </table>
       <simple-id uuid='{8838AA31-20DA-4C8B-B4EA-ADA0D67D60AF}' />
     </worksheet>
-    <worksheet name='Sorted'>
+    <worksheet name='Main (2)'>
       <layout-options>
         <title>
           <formatted-text>
@@ -500,7 +1517,1097 @@
             <encoding attr='space' class='0' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]' field-type='quantitative' max='17' min='0' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='cell'>
-            <format attr='font-size' data-class='subtotal' value='9' />
+            <format attr='width' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]' value='50' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height-header' value='64' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#f9f9f9' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <dropline drop-when='selected' haslabel='false' x-axis='false' y-axis='true' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9560221433639526' />
+                <format attr='mark-color' value='#499894' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='784' />
+                <format attr='maxheight' value='784' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</rows>
+        <cols>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</cols>
+        <show-full-range>
+          <column>[federated.09ur5c61t2oepm12tmcbp1soz950].[Match Minute (bin) 2]</column>
+          <column>[federated.09ur5c61t2oepm12tmcbp1soz950].[Match Minute (bin)]</column>
+        </show-full-range>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>20</value>
+                <value>45</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>44</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>43</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>8</value>
+                <value>42</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='4' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>41</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='5' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>40</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='6' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>39</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='7' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>12</value>
+                <value>38</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='8' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>37</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='9' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>36</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='10' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>35</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='11' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>34</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='12' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>33</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='13' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>32</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='14' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>31</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='15' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>30</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='16' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>29</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='17' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>9</value>
+                <value>28</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='18' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>27</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='19' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>26</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='20' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>25</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='21' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>24</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='22' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>23</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='23' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>15</value>
+                <value>22</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='24' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>21</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='25' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>20</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='26' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>19</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='27' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>18</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='28' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>7</value>
+                <value>17</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='29' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>6</value>
+                <value>16</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='30' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>15</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='31' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>14</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='32' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>13</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='33' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>10</value>
+                <value>12</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='34' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>11</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='35' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>10</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='36' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>2</value>
+                <value>9</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='37' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>8</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='38' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>7</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='39' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>6</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='40' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>5</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='41' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>5</value>
+                <value>4</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='42' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>3</value>
+                <value>3</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='43' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>2</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='44' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>4</value>
+                <value>1</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='45' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
+                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1</value>
+                <value>0</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{47FE6A5C-FEE5-4805-9DB1-9DB3ED916C6F}' />
+    </worksheet>
+    <worksheet name='Sorted'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>VAR Incidents by Match Time (mins)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EPL_VAR_Incidents_Processed_20210509' name='federated.09ur5c61t2oepm12tmcbp1soz950' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09ur5c61t2oepm12tmcbp1soz950'>
+            <column aggregation='None' caption='Minute (2-min intervals)' datatype='integer' name='[Match Minute (bin) 2]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[match_minute]' peg='0' size='2' />
+            </column>
+            <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column-instance column='[Number of Records]' derivation='Count' name='[cnt:Number of Records:qk]' pivot='key' type='quantitative' />
+            <column caption='Match Minute' datatype='real' name='[match_minute]' role='measure' type='quantitative' />
+            <column-instance column='[Match Minute (bin) 2]' derivation='None' name='[none:Match Minute (bin) 2:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]'>
+            <groupfilter from='0' function='range' level='[none:Match Minute (bin) 2:ok]' to='47' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]' scope='rows' value='Incident Count' />
+            <encoding attr='space' class='0' field='[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]' field-type='quantitative' max='17' min='0' range-type='fixed' scope='rows' type='space' />
           </style-rule>
           <style-rule element='header'>
             <format attr='height-header' value='64' />
@@ -540,7 +2647,7 @@
     </worksheet>
   </worksheets>
   <windows saved-dpi-scale-factor='1.5' source-height='44'>
-    <window class='worksheet' maximized='true' name='Main'>
+    <window class='worksheet' name='Main'>
       <cards>
         <edge name='left'>
           <strip size='100'>
@@ -562,30 +2669,6 @@
         </edge>
       </cards>
       <viewpoint>
-        <selection-collection>
-          <tuple-selection>
-            <tuple-reference>
-              <tuple-descriptor>
-                <pane-descriptor>
-                  <x-fields>
-                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
-                  </x-fields>
-                  <y-fields>
-                    <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
-                  </y-fields>
-                </pane-descriptor>
-                <columns>
-                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[cnt:Number of Records:qk]</field>
-                  <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
-                </columns>
-              </tuple-descriptor>
-              <tuple>
-                <value>2</value>
-                <value>47</value>
-              </tuple>
-            </tuple-reference>
-          </tuple-selection>
-        </selection-collection>
         <highlight>
           <color-one-way>
             <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Calculation_666251310813384704:qk]</field>
@@ -595,6 +2678,38 @@
         </highlight>
       </viewpoint>
       <simple-id uuid='{E4C1AED0-C727-44FE-B904-ED50EBB39A15}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Main (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Calculation_666251310813384704:qk]</field>
+            <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin) 2:ok]</field>
+            <field>[federated.09ur5c61t2oepm12tmcbp1soz950].[none:Match Minute (bin):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{577CAA62-5A15-46F1-99D3-94F75A92CAA8}' />
     </window>
     <window class='worksheet' name='Sorted'>
       <cards>
@@ -737,61 +2852,140 @@
     </thumbnail>
     <thumbnail height='192' name='Main' width='192'>
       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
-      AAALUklEQVR4nO3dWW8b1x0F8DPcJFGUREnUZkvWYllrZDuJg6RwkwZpggBNUxRpghRo+wXy
-      3Oc+9KFA0Mc+9AMUKBDAaZqk2dC0iZFmaZp4iS1qoWjJ2iVTpEhxEZeZ2we7RgwPSw7DuRJ1
-      zw/wA6UZ+dDm0WiGf93RhBACRIpyHHQAooPEApDSWABSGgtASmMBSGksACmNBSClsQCkNBaA
-      lMYCkNJYAFIaC0BKYwFIaSwAKY0FIKWxAKQ0VzW+CH+nhmpV1Qqg6zo0TavGlyOSxnIBDD2P
-      RHIfXo+GxeU1wOHGqVNDcAgBp9NpR0Yi21g8BxDY3tzE2vomPA0+jIyMIJtJ8kSCapbF166G
-      7mPH4Xbd3i0V3YCv/ZgNsYjksFYAIbB6cxGrKyuIJzNYXN/B4PGATdGI7KdVa1kUXdd5DkA1
-      hz++k9JYAFIaC0BKYwFIaSwAKc1SAYQQ2E8lkMzkIYTA+upNRONJu7IR2c7iKISB7Y0l5Or6
-      4BNRwNsOb53blmBEMlh+H0DPRLAUcSK1E4avuQ2xRAoPnp7kMBzVJEtHAKHnsLCwiM2EExND
-      3ViLJOByu+FwOCA4DEc1iO8Ek9J4FYiUxgKQ0lgAUhoLQEpjAUhpLAApjQUgpbEApDTLBRCG
-      AcMQEMJANptFvlCwIxeRFNZGIYSO8MwliOZhdDl3ENp14ER3Gzra/HblI7KVpQJomhODQ4NY
-      igDC04QGRwyx3Tja/c0wDINLJFLNsXgEEMhmc8jlnBCNTvT19SG8cIPDcFSzLK4LVEBkNwev
-      ax/eJj/i0SjGJyZsikZkP06DktJ4GZSUxgKQ0lgAUhoLQEpjAUhpLAApjQUgpbEApDTLSyOu
-      Ls5hO5YGAOxsrWJ1M2JLMCIZLC6NKNDq92EzmUWg2YXNyA40hw+iq/32ZzkMRzXG4jSoA/X1
-      dUASCF2/ipzmRjQSwdjoIIQQMAzDrpxEtrC8NGJ4cQ27GQfOnn0ELmSxthHjNCjVLA7DkdJ4
-      FYiUxgKQ0lgAUhoLQEpjAUhpLAApjQUgpbEApDTLw3CpeBR76Rxy+2kshEKIJ9N2ZSOyncUj
-      gIHd6Aa2dlIQ0NA/0I/wQsieZEQSWF4asbu7C0sRwFPnwXzwOtz1PhiGwaURqSZVcJ/gJWzt
-      OeHzdAOuekAvcBiOahaH4UhpvApESmMBSGksACmNBSClsQCkNBaAlMYCkNJYAFKa5QIYegEF
-      /fbYQzqVRL6g25GLSAqL06A6FmevYHE9juTuDiLRXVybDtqVjch2lofhBoYGsBQBfP52RHbm
-      0NoW4DAc1SyL9wk2kEwmkU45sXpjEzlXM3oDrRyGo5pl8T7BBtJ5DwItLrR29aLJoyGTydoU
-      jch+nAYlpfEyKCmNBSClsQCkNBaAlMYCkNJYAFIaC0BKYwFIaZaH4ULTX2NpI479VAKffP6l
-      XbmIpLA8DDc01I+liIH6xlZ0BloBgMNwVLMs3ijbHIfhqFZZ+xFIzyF8cxuZvS3EYjHks1ks
-      Lq/blY3IdhyGI6XxKhApjQUgpbEApDQWgJTGApDSWABSGgtASmMBSGkWh+EMLC8EsRVNIZeO
-      4/r0NNa3onZlI7Jd0VmgQqEAp9MJTdPu+XhHRyvWEzlEN9YwNj6J2eA0ejpbIYSAYRi2B6aD
-      UTAMxPf3S27X4HbD63ZLSFQdRQtwLRjC+tY2fvT0E3dLoGkOeDx3npz2vz9asS9BR8hC5BZ+
-      /eZfSm738tmH8KtHHpWQqDpMC/DVlWn8+fV38NTjjyKzn4W3oR7AnWG4xXUksg6MnezFTHAa
-      7YEeaJoGTdPgcPCU4qhylPuNrsZeB6YF8Hob8MMnHsNzzzxxz8c1pwcjE6fvPp6a9Nubjshm
-      pgWYGBnCxMiQ7CxE0pkfq4TAPy9ehBAGPrp4UXIkInlMjwCXv/gYb77xFpZv3EDf6BnZmYik
-      MS3Ag489iWzeQDxTQIvPKzsTkTRFT9evzYVx7tw5jAz2ycxDJFXRAvS0N+HDDz/EpevzMvMQ
-      SVW0AI2NjXBoBuZDYZl5iKT6PwVoQlNzCww9JzMPkVRFC3BiYABuTwN+/tILpp8vZNMIzc9j
-      j/cIoxpWtABv/PUt9PZ04LULb5h+fiF8A/2DgwjP8xyBalfRYbjezjZ8+dXX6D0xavr57s4A
-      wuFFZHI5Lo2oAF0vb9JXCIFCoWBzmuoxLcAH77yNp3/2S9Qhj7ff/bvpjp66ejgQQ09PL5dG
-      VIDTWd6Am6ZpcLmqsuKmFKZJHfk9/OfyNDo8aUST5m32NvkxOsZhOKptprV++icvoxlJ7KQd
-      +MVLz8vORCSN6RFAczgxMDyGlpYWJBIJeFpaZOciksL0CBCauYLfvfoqPnj/PfzpwluyMxFJ
-      Y3oE6D4+gGefeQajI6P4/pMB2ZmIpDE9AjQ1+7E4cxWff/4ZLn0zIzsTkTRFr225Pe471/d5
-      bZ+OrqIXbCfGxrCx74RT56gDHV1FjwD/vhKE16VjenZOZh4iqe4vgBDYWFvBubOTCM2F8b3H
-      nzTdUQgDsZ0d5Au6zRGJ7GN6BNiN3sIHH3+Ghx6cwqefmP9S/M2FeWQKOoIzs7YGJLLT/ecA
-      mobxqYfw8NwMZmfn0H38pOmOvsY6LK1vwFPn5TCcAtQZhhMCy6ur6D85An86B3/HMdMdY/EU
-      ero7sbV1i8NwCjiqw3Cmz8rb0IBEKoOB/hNI7MZMdxwem4CvoQFTD0zaGpDITvcXQNMQaG/H
-      5StX4XQCV68HTXfUNAda/H64XfyuT7XL/LimaXj5hedx5ZtZvPii+a9EEh0FRZdGfP31C0gl
-      E5iZDUmORCRP0TMb3RDwer2oq/PIzEMklenpeiIew7PP/fR2CZpaZWciksa0ANsbK7ixsgUA
-      aOsR6DvWKTUUkSymBRgeP4PhcdlRiOSrnXvZENmABSClVfyedXxnG5uRKCKxJM4/dq6amYik
-      qbgALe2d0HMpNLYd4zCcAo7KMFwklcLltdW7jysugBACq7f2MHV6ENqdxxyGO7qOyjDc8m4M
-      f/jk47uPKz8HEDpO9N9+8RPVqooLoDlc8Lc0VTMLkXS8CkRKYwFIaSwAKY0FIKWxAKQ0FoCU
-      xgKQ0lgAUlrFBShkUwhOB7F5K1rNPERSVTy0EQ6F4KxrBDQNQggIIaDrXCf0qCp3mfyDeh1k
-      CwVE0qmS28X3M/c8/g5TSxr6BoYQCk6jq/323SI1jZNBR1W5/7Waph3I6yC4tYnfvPe3kttN
-      9dy70mHFBRgeOYW5+Tm0dnTdfdIOB08pjiorL+oDeR1U2LmKC+D0eDExOVHp7kSHAr9lk9JY
-      AFIaC0BKYwFIaSwAKY0FIKWxAKQ0FoCUVnEB9P0ErgdnsbG9U808RFJVXIDI2gq0+ia0t/mr
-      mYdIqopHIQL9I/BmMpieDuLM1OShXxoxvp/BKxdeK7nd+cGTeOX84xIS1ZbDvjSiYSHft1Vc
-      gL3dKDYjMTT6mmviPsEOhxN72WzJ7bKFwqFe2u+gHPalER0W8n1bxUn9gS74A12V7k50KPAq
-      ECmNBSClsQCkNBaAlMYCkNJYAFIaC0BKYwFIad+pAPlsGslM6XdXiQ6rigsghEAoNIObS6ul
-      NyY6pCoehdjZXIa/qxe7kaSl+wTndR2//+gfJbcb6ejEi2fOVhrvPuUu1xffz+C3779bcrvT
-      x47hxxMPlNwulknjj5/+q+R2J1pbsRyLldzu4b4+PDs6XnK7ait3GG45Fi3r36/c5/uDk8M4
-      PzhUcjvpw3ACTiQiW9jYzmBi/GTZw3B5IfDFzcXSf4GGqg5VlTuol9d1XFpdKbldY52nrHx5
-      o7znm8plcW1jveR2AZ/vQIbNyh2GS2bLex7lPt9TnZ1lPd9Kh+H+C3oDIMRhu8djAAAAAElF
-      TkSuQmCC
+      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
+      gP8EFgCW+/+4ylYAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Main (2)' width='192'>
+      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
+      yht2AAAAAElFTkSuQmCC
     </thumbnail>
     <thumbnail height='192' name='Sorted' width='192'>
       iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABYlAAAWJQFJUiTw
